@@ -1,0 +1,2 @@
+python python/build_gallery.py -c configs/build_cartoon.yaml -o IndexProcess.data_file="./recognition_demo_data_v1.0/gallery_cartoon/data_file.txt" -o IndexProcess.index_path="./recognition_demo_data_v1.0/gallery_cartoon/index_update"
+python python/predict_system.py -c configs/inference_cartoon.yaml -o Global.infer_imgs="./recognition_demo_data_v1.0/test_cartoon/buzhihuo-001.jpg" -o IndexProcess.index_path="./recognition_demo_data_v1.0/gallery_cartoon/index_update"
